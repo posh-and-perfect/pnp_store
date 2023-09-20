@@ -1,0 +1,375 @@
+[
+  {
+    "id": 1,
+    "text": "WOMEN",
+    "link": "/",
+    "submenu": [
+      {
+        "id": 1.1,
+        "title": "SHOES",
+        "lists": [
+          {
+            "text": "Sneakers",
+            "link": "/",
+            "badge": "popular"
+          },
+          {
+            "text": "High Heels",
+            "link": "/",
+            "badge": null
+          },
+          {
+            "text": "Ankle Boots",
+            "link": "/",
+            "badge": null
+          },
+          {
+            "text": "Flats",
+            "link": "/",
+            "badge": "new"
+          },
+          {
+            "text": "Sandals",
+            "link": "/",
+            "badge": null
+          },
+          {
+            "text": "Running Shoes",
+            "link": "/",
+            "badge": null
+          },
+          {
+            "text": "Espadrilles",
+            "link": "/",
+            "badge": "popular"
+          },
+          {
+            "text": "Wedges",
+            "link": "/",
+            "badge": null
+          }
+        ]
+      },
+      {
+        "id": 1.2,
+        "title": "DRESSES",
+        "lists": [
+          {
+            "text": "Maxi Dresses",
+            "link": "/",
+            "badge": null
+          },
+          {
+            "text": "Little Black Dresses",
+            "link": "/",
+            "badge": "popular"
+          },
+          {
+            "text": "Wrap Dresses",
+            "link": "/",
+            "badge": null
+          },
+          {
+            "text": "Midi Dresses",
+            "link": "/",
+            "badge": "new"
+          },
+          {
+            "text": "Bodycon Dresses",
+            "link": "/",
+            "badge": null
+          },
+          {
+            "text": "Shift Dresses",
+            "link": "/",
+            "badge": null
+          },
+          {
+            "text": "Summer Dresses",
+            "link": "/",
+            "badge": "popular"
+          },
+          {
+            "text": "Party Dresses",
+            "link": "/",
+            "badge": null
+          }
+        ]
+      },
+      {
+        "id": 1.3,
+        "title": "CASUAL",
+        "lists": [
+          {
+            "text": "T-Shirts",
+            "link": "/",
+            "badge": null
+          },
+          {
+            "text": "Jeans",
+            "link": "/",
+            "badge": "popular"
+          },
+          {
+            "text": "Sweatshirts",
+            "link": "/",
+            "badge": null
+          },
+          {
+            "text": "Leggings",
+            "link": "/",
+            "badge": "new"
+          },
+          {
+            "text": "Hoodies",
+            "link": "/",
+            "badge": null
+          },
+          {
+            "text": "Blouses",
+            "link": "/",
+            "badge": "popular"
+          },
+          {
+            "text": "Joggers",
+            "link": "/",
+            "badge": null
+          },
+          {
+            "text": "Cardigans",
+            "link": "/",
+            "badge": null
+          }
+        ]
+      }
+    ],
+    "mega_menu": true,
+    "promo": "assets/images/dropdown/women_dropdown_img_2.png"
+  },
+  {
+    "id": 2,
+    "text": "MEN",
+    "link": "/",
+    "submenu": [
+      {
+        "id": 2.1,
+        "title": "SHOES",
+        "lists": [
+          {
+            "text": "Sneakers",
+            "link": "/",
+            "badge": "popular"
+          },
+          {
+            "text": "Dress Shoes",
+            "link": "/",
+            "badge": null
+          },
+          {
+            "text": "Boots",
+            "link": "/",
+            "badge": null
+          },
+          {
+            "text": "Loafers",
+            "link": "/",
+            "badge": "new"
+          },
+          {
+            "text": "Athletic Shoes",
+            "link": "/",
+            "badge": null
+          },
+          {
+            "text": "Sandals",
+            "link": "/",
+            "badge": null
+          },
+          {
+            "text": "Oxfords",
+            "link": "/",
+            "badge": "popular"
+          },
+          {
+            "text": "Slippers",
+            "link": "/",
+            "badge": null
+          }
+        ]
+      },
+      {
+        "id": 2.2,
+        "title": "SUITS",
+        "lists": [
+          {
+            "text": "Business Suits",
+            "link": "/",
+            "badge": null
+          },
+          {
+            "text": "Tuxedos",
+            "link": "/",
+            "badge": "popular"
+          },
+          {
+            "text": "Casual Suits",
+            "link": "/",
+            "badge": null
+          },
+          {
+            "text": "Blazers",
+            "link": "/",
+            "badge": "new"
+          },
+          {
+            "text": "Vests",
+            "link": "/",
+            "badge": null
+          },
+          {
+            "text": "Suit Separates",
+            "link": "/",
+            "badge": null
+          },
+          {
+            "text": "Wedding Suits",
+            "link": "/",
+            "badge": "popular"
+          },
+          {
+            "text": "Slim Fit Suits",
+            "link": "/",
+            "badge": null
+          }
+        ]
+      },
+      {
+        "id": 2.3,
+        "title": "CASUAL",
+        "lists": [
+          {
+            "text": "T-Shirts",
+            "link": "/",
+            "badge": null
+          },
+          {
+            "text": "Jeans",
+            "link": "/",
+            "badge": "popular"
+          },
+          {
+            "text": "Sweatshirts",
+            "link": "/",
+            "badge": null
+          },
+          {
+            "text": "Shorts",
+            "link": "/",
+            "badge": "new"
+          },
+          {
+            "text": "Hoodies",
+            "link": "/",
+            "badge": null
+          },
+          {
+            "text": "Polos",
+            "link": "/",
+            "badge": "popular"
+          },
+          {
+            "text": "Joggers",
+            "link": "/",
+            "badge": null
+          },
+          {
+            "text": "Casual Shirts",
+            "link": "/",
+            "badge": null
+          }
+        ]
+      }
+    ],
+    "mega_menu": true,
+    "promo": "assets/images/dropdown/dropdown_men_img.png"
+  },  
+  {
+    "id": 3,
+    "text": "BRANDS",
+    "link": "/",
+    "submenu": [
+      {
+        "id": 6.1,
+        "title": "BRANDS",
+        "lists": [
+          {
+            "text": "Nike",
+            "link": "/brands/nike",
+            "badge": null
+          },
+          {
+            "text": "Adidas",
+            "link": "/brands/adidas",
+            "badge": "popular"
+          },
+          {
+            "text": "Puma",
+            "link": "/brands/puma",
+            "badge": null
+          },
+          {
+            "text": "Reebok",
+            "link": "/brands/reebok",
+            "badge": "new"
+          },
+          {
+            "text": "New Balance",
+            "link": "/brands/new-balance",
+            "badge": null
+          },
+          {
+            "text": "Converse",
+            "link": "/brands/converse",
+            "badge": "popular"
+          },
+          {
+            "text": "Under Armour",
+            "link": "/brands/under-armour",
+            "badge": null
+          },
+          {
+            "text": "Vans",
+            "link": "/brands/vans",
+            "badge": null
+          }
+        ]
+      }
+    ],
+    "mega_menu": false,
+    "promo": false
+  },  
+  {
+    "id": 4,
+    "text": "BLOG",
+    "link": "/blog",
+    "submenu": false,
+    "mega_menu": false,
+    "promo": false
+  },
+  {
+    "id": 5,
+    "text": "ABOUT",
+    "link": "/about",
+    "submenu": false,
+    "mega_menu": false,
+    "promo": false
+  },
+  {
+    "id": 5,
+    "text": "CONTACT",
+    "link": "/contact",
+    "submenu": false,
+    "mega_menu": false,
+    "promo": false
+  }
+]

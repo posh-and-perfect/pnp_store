@@ -1,0 +1,21 @@
+{
+    "id": 1,
+    "profileImage": "https://via.placeholder.com/150",
+    "email": "johndoe@example.com",
+    "phone": "123-456-7890",
+    "address": "123 Main St, City, Country",
+    "creditCards": [
+        {
+            "cardholderName": "John Doe",
+            "expirationDate": "12/2024",
+            "pan": "1234 5678 9012 3456",
+            "serviceCode": "123"
+        },
+        {
+            "cardholderName": "Jane Smith",
+            "expirationDate": "10/2023",
+            "pan": "9876 5432 1098 7654",
+            "serviceCode": "456"
+        }
+    ]
+}
