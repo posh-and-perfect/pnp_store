@@ -6,7 +6,7 @@ import {Col, Container, Row} from "react-bootstrap";
 import Header from "@components/header";
 import Footer from "@components/footer";
 import {HomePagesNavData as navContent} from "@data/navbar";
-import {ContentWrapper as Wrapper} from "@components/wrapper";
+import ContentWrapper from "@components/wrapper";
 
 
 const Page404 = () => {
@@ -25,7 +25,7 @@ const Page404 = () => {
                 navbarAlignment="left"
             />
 
-            <Wrapper>
+            <ContentWrapper>
                 <Breadcrumb/>
 
                 <div className="container-indent">
@@ -143,7 +143,7 @@ const Page404 = () => {
                         </div>
                     </Container>
                 </div>
-            </Wrapper>
+            </ContentWrapper>
             <Footer
                 logo={logo}
                 newsletter={true}
