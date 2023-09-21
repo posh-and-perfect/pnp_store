@@ -6,4 +6,4 @@ const ContentWrapper = ({children, className}) => {
     );
 };
 
-export default ContentWrapper;
+export {ContentWrapper};

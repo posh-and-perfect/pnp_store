@@ -50,6 +50,7 @@
   },
   "cacheDirectories": [
     "node_modules/",
-    ".next/cache/"
+    ".next/cache/",
+    ".next/cache/**/*"
   ]
 }

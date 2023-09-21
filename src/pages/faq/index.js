@@ -6,7 +6,8 @@ import {Col, Container, Row} from "react-bootstrap";
 import Header from "@components/header";
 import Footer from "@components/footer";
 import {HomePagesNavData as navContent} from "@data/navbar";
-import ContentWrapper from "@components/wrapper";
+import {ContentWrapper as Wrapper} from "@components/wrapper";
+
 
 const Page404 = () => {
     const logo = "/assets/images/logo/logo_hztl_tr.png"
