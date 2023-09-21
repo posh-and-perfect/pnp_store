@@ -47,5 +47,9 @@
     "@svgr/webpack": "^8.0.1",
     "sass": "^1.68.0",
     "slick-carousel": "^1.8.1"
-  }
+  },
+  "cacheDirectories": [
+    "node_modules/",
+    ".next/cache/"
+  ]
 }
