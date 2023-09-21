@@ -5,21 +5,21 @@ const OfferItemOne = ({data, className}) => {
     return (
         <div className={`tt-promo02 ${className ? className : ''}`}>
             <div className="image-box">
-                <Link href={data.btnLink}>
+                <Link href={data.btnLink} legacyBehavior>
                     <img src={data.thumb} alt={data.title}/>
                 </Link>
             </div>
             <div className="tt-description">
-                <Link href={data.btnLink}>
-                    <a className="tt-title">
-                        <div className="tt-title-small">{data.subTitle}</div>
-                        <div className="tt-title-large">{data.title}</div>
-                    </a>
+                <Link href={data.btnLink} className="tt-title">
+
+                    <div className="tt-title-small">{data.subTitle}</div>
+                    <div className="tt-title-large">{data.title}</div>
+
                 </Link>
 
                 <p>{data.content}</p>
-                <Link href={data.btnLink}>
-                    <a className="btn-link">{data.btnText}</a>
+                <Link href={data.btnLink} className="btn-link">
+                    {data.btnText}
                 </Link>
             </div>
         </div>

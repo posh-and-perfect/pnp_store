@@ -34,10 +34,10 @@ const CategoriesMenu = ({className, initialVisibility}) => {
                     <ul>
                         <li className="tt-submenu">
                             <Link href="/product/category/women">
-                                <a>
-                                    <WomenIcon/>
-                                    <span>WOMEN</span>
-                                </a>
+
+                                <WomenIcon/>
+                                <span>WOMEN</span>
+
                             </Link>
                             <div className="dropdown-menu size-md">
                                 <div className="dropdown-menu-wrapper">
@@ -45,57 +45,57 @@ const CategoriesMenu = ({className, initialVisibility}) => {
                                         <Col xs={12}>
                                             <Row className="tt-col-list">
                                                 <Col sm={4}>
-                                                    <Link href="/shop">
-                                                        <a className="tt-title-submenu">TOPS</a>
+                                                    <Link href="/shop" className="tt-title-submenu">
+                                                        TOPS
                                                     </Link>
                                                     <ul className="tt-megamenu-submenu">
                                                         <li>
-                                                            <Link href="/shop"><a>Blouses &amp; Shirts</a></Link>
+                                                            <Link href="/shop">Blouses &amp; Shirts</Link>
                                                         </li>
-                                                        <li><Link href="/shop"><a>Dresses</a></Link></li>
+                                                        <li><Link href="/shop">Dresses</Link></li>
                                                         <li>
-                                                            <Link href="/shop"><a>Tops &amp; T-shirts</a></Link>
+                                                            <Link href="/shop">Tops &amp; T-shirts</Link>
                                                         </li>
                                                         <li>
-                                                            <Link href="/shop"><a>Sleeveless Tops</a></Link>
+                                                            <Link href="/shop">Sleeveless Tops</Link>
                                                         </li>
-                                                        <li><Link href="/shop"><a>Sweaters</a></Link></li>
-                                                        <li><Link href="/shop"><a>Jackets</a></Link></li>
-                                                        <li><Link href="/shop"><a>Outerwear</a></Link></li>
+                                                        <li><Link href="/shop">Sweaters</Link></li>
+                                                        <li><Link href="/shop">Jackets</Link></li>
+                                                        <li><Link href="/shop">Outerwear</Link></li>
                                                     </ul>
                                                 </Col>
 
                                                 <Col sm={4}>
-                                                    <Link href="/shop">
-                                                        <a className="tt-title-submenu">BOTTOMS</a>
+                                                    <Link href="/shop" className="tt-title-submenu">
+                                                        BOTTOMS
                                                     </Link>
                                                     <ul className="tt-megamenu-submenu">
                                                         <li>
-                                                            <Link href="/shop"><a>Trousers Featured</a></Link>
+                                                            <Link href="/shop">Trousers Featured</Link>
                                                         </li>
-                                                        <li><Link href="/shop"><a>Jeans</a></Link></li>
-                                                        <li><Link href="/shop"><a>Leggings</a></Link></li>
+                                                        <li><Link href="/shop">Jeans</Link></li>
+                                                        <li><Link href="/shop">Leggings</Link></li>
                                                         <li>
-                                                            <Link href="/shop"><a>Jumpsuit & Shorts</a></Link>
+                                                            <Link href="/shop">Jumpsuit & Shorts</Link>
                                                         </li>
-                                                        <li><Link href="/shop"><a>Skirts</a></Link></li>
-                                                        <li><Link href="/shop"><a>Tights</a></Link></li>
+                                                        <li><Link href="/shop">Skirts</Link></li>
+                                                        <li><Link href="/shop">Tights</Link></li>
                                                     </ul>
                                                 </Col>
 
                                                 <Col sm={4}>
-                                                    <Link href="/shop">
-                                                        <a className="tt-title-submenu">ACCESSORIES</a>
+                                                    <Link href="/shop" className="tt-title-submenu">
+                                                        ACCESSORIES
                                                     </Link>
                                                     <ul className="tt-megamenu-submenu">
-                                                        <li><Link href="/shop"><a>Jewellery</a></Link></li>
-                                                        <li><Link href="/shop"><a>Hats</a></Link></li>
-                                                        <li><Link href="/shop"><a>Scarves & Snoods</a></Link></li>
-                                                        <li><Link href="/shop"><a>Belts</a></Link></li>
-                                                        <li><Link href="/shop"><a>Bags</a></Link></li>
-                                                        <li><Link href="/shop"><a>Tights</a></Link></li>
-                                                        <li><Link href="/shop"><a>Shoes Sale 15%</a></Link></li>
-                                                        <li><Link href="/shop"><a>Sunglasses</a></Link></li>
+                                                        <li><Link href="/shop">Jewellery</Link></li>
+                                                        <li><Link href="/shop">Hats</Link></li>
+                                                        <li><Link href="/shop">Scarves & Snoods</Link></li>
+                                                        <li><Link href="/shop">Belts</Link></li>
+                                                        <li><Link href="/shop">Bags</Link></li>
+                                                        <li><Link href="/shop">Tights</Link></li>
+                                                        <li><Link href="/shop">Shoes Sale 15%</Link></li>
+                                                        <li><Link href="/shop">Sunglasses</Link></li>
                                                     </ul>
                                                 </Col>
                                             </Row>
@@ -104,25 +104,24 @@ const CategoriesMenu = ({className, initialVisibility}) => {
 
                                     <Row>
                                         <Col>
-                                            <Link href="/shop">
-                                                <a className="tt-promo-02">
-                                                    <img
-                                                        src="/assets/images/no-placeholder/header-promo-01.jpg"
-                                                        alt="Header Promo"
-                                                    />
+                                            <Link href="/shop" className="tt-promo-02">
 
-                                                    <div className="tt-description tt-point-h-l">
-                                                        <div className="tt-description-wrapper">
-                                                            <div className="tt-title-small">
-                                                                SUMMER
-                                                                <span className="tt-base-color"> 2021</span>
-                                                            </div>
-                                                            <div className="tt-title-large">
-                                                                NEW ARRIVALS
-                                                            </div>
+                                                <img
+                                                    src="/assets/images/no-placeholder/header-promo-01.jpg"
+                                                    alt="Header Promo"
+                                                />
+                                                <div className="tt-description tt-point-h-l">
+                                                    <div className="tt-description-wrapper">
+                                                        <div className="tt-title-small">
+                                                            SUMMER
+                                                            <span className="tt-base-color"> 2021</span>
+                                                        </div>
+                                                        <div className="tt-title-large">
+                                                            NEW ARRIVALS
                                                         </div>
                                                     </div>
-                                                </a>
+                                                </div>
+
                                             </Link>
                                         </Col>
                                     </Row>
@@ -131,10 +130,10 @@ const CategoriesMenu = ({className, initialVisibility}) => {
                         </li>
                         <li className="tt-submenu ">
                             <Link href="/product/category/men">
-                                <a>
-                                    <MenIcon/>
-                                    <span>MEN</span>
-                                </a>
+
+                                <MenIcon/>
+                                <span>MEN</span>
+
                             </Link>
                             <div className="dropdown-menu size-lg">
                                 <div className="dropdown-menu-wrapper">
@@ -142,59 +141,53 @@ const CategoriesMenu = ({className, initialVisibility}) => {
                                         <Col xs={12}>
                                             <Row className="tt-col-list">
                                                 <Col sm={4}>
-                                                    <Link href="/shop">
-                                                        <a className="tt-title-submenu">
-                                                            TOPS
-                                                            <img src="/assets/images/custom/header-category-01.jpg"
-                                                                 alt="Header Promo"/>
-                                                        </a>
+                                                    <Link href="/shop" className="tt-title-submenu">
+                                                        TOPS<img src="/assets/images/custom/header-category-01.jpg"
+                                                             alt="Header Promo"/>
+
                                                     </Link>
                                                     <ul className="tt-megamenu-submenu">
-                                                        <li><Link href="/shop"><a>Blouses &amp; Shirts</a></Link></li>
-                                                        <li><Link href="/shop"><a>Dresses</a></Link></li>
-                                                        <li><Link href="/shop"><a>Tops &amp; T-shirts</a></Link></li>
-                                                        <li><Link href="/shop"><a>Sleeveless Tops</a></Link></li>
-                                                        <li><Link href="/shop"><a>Sweaters</a></Link></li>
-                                                        <li><Link href="/shop"><a>Jackets</a></Link></li>
-                                                        <li><Link href="/shop"><a>Outerwear</a></Link></li>
+                                                        <li><Link href="/shop">Blouses &amp; Shirts</Link></li>
+                                                        <li><Link href="/shop">Dresses</Link></li>
+                                                        <li><Link href="/shop">Tops &amp; T-shirts</Link></li>
+                                                        <li><Link href="/shop">Sleeveless Tops</Link></li>
+                                                        <li><Link href="/shop">Sweaters</Link></li>
+                                                        <li><Link href="/shop">Jackets</Link></li>
+                                                        <li><Link href="/shop">Outerwear</Link></li>
                                                     </ul>
                                                 </Col>
 
                                                 <Col sm={4}>
-                                                    <Link href="/shop">
-                                                        <a className="tt-title-submenu">
-                                                            BOTTOMS
-                                                            <img src="/assets/images/custom/header-category-02.jpg"
-                                                                 alt="Header Promo"/>
-                                                        </a>
+                                                    <Link href="/shop" className="tt-title-submenu">
+                                                        BOTTOMS<img src="/assets/images/custom/header-category-02.jpg"
+                                                             alt="Header Promo"/>
+
                                                     </Link>
                                                     <ul className="tt-megamenu-submenu">
-                                                        <li><Link href="/shop"><a>Trousers Featured</a></Link></li>
-                                                        <li><Link href="/shop"><a>Jeans</a></Link></li>
-                                                        <li><Link href="/shop"><a>Leggings</a></Link></li>
-                                                        <li><Link href="/shop"><a>Jumpsuit & Shorts</a></Link></li>
-                                                        <li><Link href="/shop"><a>Skirts</a></Link></li>
-                                                        <li><Link href="/shop"><a>Tights</a></Link></li>
+                                                        <li><Link href="/shop">Trousers Featured</Link></li>
+                                                        <li><Link href="/shop">Jeans</Link></li>
+                                                        <li><Link href="/shop">Leggings</Link></li>
+                                                        <li><Link href="/shop">Jumpsuit & Shorts</Link></li>
+                                                        <li><Link href="/shop">Skirts</Link></li>
+                                                        <li><Link href="/shop">Tights</Link></li>
                                                     </ul>
                                                 </Col>
 
                                                 <Col sm={4}>
-                                                    <Link href="/shop">
-                                                        <a className="tt-title-submenu">
-                                                            ACCESSORIES
-                                                            <img src="/assets/images/custom/header-category-03.jpg"
-                                                                 alt="Header Promo"/>
-                                                        </a>
+                                                    <Link href="/shop" className="tt-title-submenu">
+                                                        ACCESSORIES<img src="/assets/images/custom/header-category-03.jpg"
+                                                             alt="Header Promo"/>
+
                                                     </Link>
                                                     <ul className="tt-megamenu-submenu">
-                                                        <li><Link href="/shop"><a>Jewellery</a></Link></li>
-                                                        <li><Link href="/shop"><a>Hats</a></Link></li>
-                                                        <li><Link href="/shop"><a>Scarves & Snoods</a></Link></li>
-                                                        <li><Link href="/shop"><a>Belts</a></Link></li>
-                                                        <li><Link href="/shop"><a>Bags</a></Link></li>
-                                                        <li><Link href="/shop"><a>Tights</a></Link></li>
-                                                        <li><Link href="/shop"><a>Shoes Sale 15%</a></Link></li>
-                                                        <li><Link href="/shop"><a>Sunglasses</a></Link></li>
+                                                        <li><Link href="/shop">Jewellery</Link></li>
+                                                        <li><Link href="/shop">Hats</Link></li>
+                                                        <li><Link href="/shop">Scarves & Snoods</Link></li>
+                                                        <li><Link href="/shop">Belts</Link></li>
+                                                        <li><Link href="/shop">Bags</Link></li>
+                                                        <li><Link href="/shop">Tights</Link></li>
+                                                        <li><Link href="/shop">Shoes Sale 15%</Link></li>
+                                                        <li><Link href="/shop">Sunglasses</Link></li>
                                                     </ul>
                                                 </Col>
                                             </Row>
@@ -205,58 +198,61 @@ const CategoriesMenu = ({className, initialVisibility}) => {
                         </li>
                         <li>
                             <Link href="/product/category/accessories">
-                                <a>
-                                    <Accessories/>
-                                    <span>ACCESSORIES</span>
-                                </a>
+
+                                <Accessories/>
+                                <span>ACCESSORIES</span>
+
                             </Link>
                         </li>
                         <li>
                             <Link href="/product/category/shoe">
-                                <a>
-                                    <Shoe/>
-                                    <span>SHOES</span>
-                                </a>
+
+                                <Shoe/>
+                                <span>SHOES</span>
+
                             </Link>
                         </li>
                         <li>
                             <Link href="/shop">
-                                <a>
-                                    <NewArrivals/>
-                                    <span>NEW ARRIVALS</span>
-                                </a>
+
+                                <NewArrivals/>
+                                <span>NEW ARRIVALS</span>
+
                             </Link>
                         </li>
                         <li>
                             <Link href="/shop">
-                                <a>
-                                    <Clearance/>
-                                    <span>CLEARANCE</span>
-                                </a>
+
+                                <Clearance/>
+                                <span>CLEARANCE</span>
+
                             </Link>
                         </li>
                         <li>
                             <Link href="/shop">
-                                <a>
-                                    <SpecialOffers/>
-                                    <span>SPECIAL OFFERS</span>
-                                </a>
+
+                                <SpecialOffers/>
+                                <span>SPECIAL OFFERS</span>
+
                             </Link>
                         </li>
                         <li>
                             <Link href="/shop">
-                                <a>
-                                    <GiftCard/>
-                                    <span>GIFT CARD</span>
-                                </a>
+
+                                <GiftCard/>
+                                <span>GIFT CARD</span>
+
                             </Link>
                         </li>
                         <li>
-                            <Link href="https://1.envato.market/VLXVj">
-                                <a target="_blank" rel="noopener noreferrer">
-                                    <BuyTemplate/>
-                                    <span>BUY TEMPLATE!</span>
-                                </a>
+                            <Link
+                                href="https://1.envato.market/VLXVj"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
+                                <BuyTemplate/>
+                                <span>BUY TEMPLATE!</span>
+
                             </Link>
                         </li>
                     </ul>

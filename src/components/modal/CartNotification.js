@@ -21,9 +21,9 @@ const CartNotification = ({product, modalShow, modalOnHide}) => {
                     <div className="tt-modal-messages">
                         <i className="icon-f-68"/> Added to cart successfully!
                     </div>
-                    <Link href="/"><a className="btn-link btn-close-popup">CONTINUE SHOPPING</a></Link>
-                    <Link href="/cart"><a className="btn-link">VIEW CART</a></Link>
-                    <Link href="/checkout"><a className="btn-link">PROCEED TO CHECKOUT</a></Link>
+                    <Link href="/" className="btn-link btn-close-popup">CONTINUE SHOPPING</Link>
+                    <Link href="/cart" className="btn-link">VIEW CART</Link>
+                    <Link href="/checkout" className="btn-link">PROCEED TO CHECKOUT</Link>
                 </div>
 
                 <div className="tt-modal-addtocart desktop">
@@ -52,7 +52,7 @@ const CartNotification = ({product, modalShow, modalOnHide}) => {
                                     )}
                                 </div>
                                 <h2 className="tt-title">
-                                    <Link href="/">{name}</Link>
+                                    <Link href="/" legacyBehavior>{name}</Link>
                                 </h2>
                                 <div className="tt-qty">
                                     QTY: <span>{quantity}</span>
@@ -69,21 +69,19 @@ const CartNotification = ({product, modalShow, modalOnHide}) => {
                         </Col>
 
                         <Col lg={6}>
-                            <Link href="/">
-                                <a className="tt-cart-total">
-                                    There are {shoppingCart && shoppingCart.length} items in your cart
-                                    <div className="tt-total">
-                                        TOTAL: <span
-                                        className="tt-price">{CURRENCY + getCartTotalPrice(shoppingCart).toFixed(2)}</span>
-                                    </div>
-                                </a>
+                            <Link href="/" className="tt-cart-total">
+                                There are{shoppingCart && shoppingCart.length}items in your cart<div className="tt-total">
+                                    TOTAL: <span
+                                    className="tt-price">{CURRENCY + getCartTotalPrice(shoppingCart).toFixed(2)}</span>
+                                </div>
+
                             </Link>
 
-                            <Link href="/shop">
-                                <a className="btn btn-border btn-close-popup">CONTINUE SHOPPING</a>
+                            <Link href="/shop" className="btn btn-border btn-close-popup">
+                                CONTINUE SHOPPING
                             </Link>
-                            <Link href="/cart"><a className="btn btn-border">VIEW CART</a></Link>
-                            <Link href="/checkout"><a className="btn">PROCEED TO CHECKOUT</a></Link>
+                            <Link href="/cart" className="btn btn-border">VIEW CART</Link>
+                            <Link href="/checkout" className="btn">PROCEED TO CHECKOUT</Link>
                         </Col>
                     </Row>
                 </div>

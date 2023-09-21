@@ -12,7 +12,7 @@ const ProductSlide = ({bgImage, title, content}) => {
                         {title && <div className="tp-caption-02-01">{parse(title)}</div>}
                         {content && <div className="tp-caption-02-02">{parse(content)}</div>}
                         <div className="tp-caption-btn">
-                            <Link href="/shop"><a className="btn btn-xl">Shop Now!</a></Link>
+                            <Link href="/shop" className="btn btn-xl">Shop Now!</Link>
                         </div>
                     </div>
                 </Container>

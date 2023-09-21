@@ -17,8 +17,8 @@ const SigninForm = ({ csrfToken }) => {
                 addresses, view and track your orders in your account and more.
               </p>
               <div className="form-group">
-                <Link href="/account/register">
-                  <a className="btn btn-top btn-border">CREATE AN ACCOUNT</a>
+                <Link href="/account/register" className="btn btn-top btn-border">
+                  CREATE AN ACCOUNT
                 </Link>
               </div>
             </div>

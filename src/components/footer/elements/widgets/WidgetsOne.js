@@ -23,7 +23,7 @@ const WidgetsOne = ({className, dark}) => {
                                 {categories.map(category => (
                                     <li key={category}>
                                         <Link href={`/product/category/${category}`}>
-                                            <a>{toCapitalize(category.toLowerCase())}</a>
+                                            {toCapitalize(category.toLowerCase())}
                                         </Link>
                                     </li>
                                 ))}
@@ -37,7 +37,7 @@ const WidgetsOne = ({className, dark}) => {
                                 {accountData.map(item => (
                                     <li key={item.id}>
                                         <Link href={item.link}>
-                                            <a>{item.text}</a>
+                                            {item.text}
                                         </Link>
                                     </li>
                                 ))}

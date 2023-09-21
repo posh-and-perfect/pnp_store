@@ -88,8 +88,8 @@ const SigninPage = () => {
                       your orders in your account and more.
                     </p>
                     <div className="form-group">
-                      <Link href="/account/signup">
-                        <a className="btn btn-top btn-border">CREATE AN ACCOUNT</a>
+                      <Link href="/account/signup" className="btn btn-top btn-border">
+                        CREATE AN ACCOUNT
                       </Link>
                     </div>
                   </div>

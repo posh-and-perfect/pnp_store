@@ -16,7 +16,7 @@ const CategoryPromo = ({className, thumb, subtitle, title, content, btn, btnLink
                                     <div className="tt-title-small">{parse(subtitle)}</div>
                                     <div className="tt-title-large">{parse(title)}</div>
                                     {content && <p>{parse(content)}</p>}
-                                    {btn && <Link href={btnLink}><a className="btn btn-xl">SHOP NOW!</a></Link>}
+                                    {btn && <Link href={btnLink} className="btn btn-xl">SHOP NOW!</Link>}
                                 </div>
                             </div>
                         </div>

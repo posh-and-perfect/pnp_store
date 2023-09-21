@@ -58,19 +58,18 @@ const ProductOne = ({product, page, showVariant, className}) => {
                     )}
 
                     <Link href={slug}>
-                        <a>
-                            <ProductThumb
-                                thumbs={productColorImage ? [productColorImage, thumbs[1]] : thumbs}
-                                productName={name}
-                            />
 
-                            <div className="tt-label-location">
-                                {badge &&
-                                <span className={`tt-label-${badge.toLowerCase()}`}>{toCapitalize(badge)}</span>}
-                                {discount && <span className={`tt-label-sale`}>Sale {discount}%</span>}
-                                {isOutOfStock && <span className={`tt-label-out-stock`}>Out Of Stock</span>}
-                            </div>
-                        </a>
+                        <ProductThumb
+                            thumbs={productColorImage ? [productColorImage, thumbs[1]] : thumbs}
+                            productName={name}
+                        />
+                        <div className="tt-label-location">
+                            {badge &&
+                            <span className={`tt-label-${badge.toLowerCase()}`}>{toCapitalize(badge)}</span>}
+                            {discount && <span className={`tt-label-sale`}>Sale {discount}%</span>}
+                            {isOutOfStock && <span className={`tt-label-out-stock`}>Out Of Stock</span>}
+                        </div>
+
                     </Link>
                 </div>
 
@@ -85,7 +84,7 @@ const ProductOne = ({product, page, showVariant, className}) => {
                         <ul className="tt-add-info">
                             <li>
                                 <Link href="/">
-                                    <a>{vendor}</a>
+                                    {vendor}
                                 </Link>
                             </li>
                         </ul>
@@ -94,7 +93,7 @@ const ProductOne = ({product, page, showVariant, className}) => {
                     </div>
 
                     <h2 className="tt-title">
-                        <Link href={slug}>{name}</Link>
+                        <Link href={slug} legacyBehavior>{name}</Link>
                     </h2>
 
                     <div className="tt-price mt-1">

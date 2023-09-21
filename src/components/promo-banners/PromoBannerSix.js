@@ -17,8 +17,8 @@ const PromoBannerSix = ({className, data, containerFluid = true}) => {
                                         {banner?.subtitle && <div className="tt-title-small">{parse(banner.subtitle)}</div>}
                                         {banner?.title && <div className="tt-title-large">{parse(banner.title)}</div>}
                                         {banner.btn && (
-                                            <Link href={banner.btnLink}>
-                                                <a className={`tt-link ${banner.btnClass}`}>{banner.btnText}</a>
+                                            <Link href={banner.btnLink} className={`tt-link ${banner.btnClass}`}>
+                                                {banner.btnText}
                                             </Link>
                                         )}
                                     </div>

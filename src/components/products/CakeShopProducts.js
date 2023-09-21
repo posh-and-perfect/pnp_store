@@ -16,7 +16,7 @@ const CakeShopProducts = ({className, products, limit = 9, showMoreBtn = false})
                 </Row>
                 {showMoreBtn && (
                     <div className="text-center tt_product_showmore">
-                        <Link href="/product/category/cake"><a className="btn">View all</a></Link>
+                        <Link href="/product/category/cake" className="btn">View all</Link>
                     </div>
                 )}
             </Container>

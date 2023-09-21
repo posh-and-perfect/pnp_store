@@ -43,10 +43,10 @@ const Account = ({ className, isHidden, openHandler, closeHandler }) => {
                       return (
                         <li key={item.id}>
                           <Link href={item.link}>
-                            <a>
-                              <i className={item.iconClass} />
-                              {item.text}
-                            </a>
+
+                            <i className={item.iconClass} />
+                            {item.text}
+
                           </Link>
                         </li>
                       );
@@ -70,10 +70,10 @@ const Account = ({ className, isHidden, openHandler, closeHandler }) => {
                     return (
                       <li key={item.id}>
                         <Link href={item.link}>
-                          <a>
-                            <i className={item.iconClass} />
-                            {item.text}
-                          </a>
+
+                          <i className={item.iconClass} />
+                          {item.text}
+
                         </Link>
                       </li>
                     );

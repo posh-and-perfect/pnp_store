@@ -39,46 +39,46 @@ const MiniCart = ({className, isHidden, openHandler, closeHandler}) => {
                                         {shoppingCart.slice(0, 3).map(product => (
                                             <div className="tt-item" key={product.cartId}>
                                                 <Link href="/">
-                                                    <a>
-                                                        <div className="tt-item-img">
-                                                            {product.variations ? (
-                                                                product.variations.map((variation, i) => (
-                                                                    variation?.color?.name === product?.color && (
-                                                                        <img
-                                                                            key={i}
-                                                                            src={variation.color.thumb}
-                                                                            alt={product.name}
-                                                                        />
-                                                                    )
-                                                                ))
-                                                            ) : (
-                                                                <img
-                                                                    src={product.thumbs[0]}
-                                                                    alt={product.name}
-                                                                />
-                                                            )}
+
+                                                    <div className="tt-item-img">
+                                                        {product.variations ? (
+                                                            product.variations.map((variation, i) => (
+                                                                variation?.color?.name === product?.color && (
+                                                                    <img
+                                                                        key={i}
+                                                                        src={variation.color.thumb}
+                                                                        alt={product.name}
+                                                                    />
+                                                                )
+                                                            ))
+                                                        ) : (
+                                                            <img
+                                                                src={product.thumbs[0]}
+                                                                alt={product.name}
+                                                            />
+                                                        )}
+                                                    </div>
+                                                    <div className="tt-item-descriptions">
+                                                        <h2 className="tt-title">{product.name}</h2>
+                                                        {product.variations && (
+                                                            <ul className="tt-add-info">
+                                                                <li>
+                                                                    {`
+                                                                    ${product.color ? toCapitalize(product.color) : ''},
+                                                                    ${product.size ? product.size.toUpperCase() : ''},
+                                                                    ${product.material ? toCapitalize(product.material.name) : ''}
+                                                                `}
+                                                                </li>
+                                                            </ul>
+                                                        )}
+                                                        <div className="tt-quantity">{product.quantity} X</div>
+                                                        <div className="tt-price"
+                                                             style={{marginLeft: 2}}
+                                                        >
+                                                            {CURRENCY + product.price.toFixed(2)}
                                                         </div>
-                                                        <div className="tt-item-descriptions">
-                                                            <h2 className="tt-title">{product.name}</h2>
-                                                            {product.variations && (
-                                                                <ul className="tt-add-info">
-                                                                    <li>
-                                                                        {`
-                                                                        ${product.color ? toCapitalize(product.color) : ''},
-                                                                        ${product.size ? product.size.toUpperCase() : ''},
-                                                                        ${product.material ? toCapitalize(product.material.name) : ''}
-                                                                    `}
-                                                                    </li>
-                                                                </ul>
-                                                            )}
-                                                            <div className="tt-quantity">{product.quantity} X</div>
-                                                            <div className="tt-price"
-                                                                 style={{marginLeft: 2}}
-                                                            >
-                                                                {CURRENCY + product.price.toFixed(2)}
-                                                            </div>
-                                                        </div>
-                                                    </a>
+                                                    </div>
+
                                                 </Link>
                                                 <div className="tt-item-close">
                                                     <button className="tt-btn-close"
@@ -102,8 +102,8 @@ const MiniCart = ({className, isHidden, openHandler, closeHandler}) => {
                                     {shoppingCart.length > 3 && (
                                         <div className="flex-align-center">
                                             <Tooltip content="View Cart" className="d-flex justify-content-center">
-                                                <Link href="/cart">
-                                                    <a className="btn-link-02 text-center">. . .</a>
+                                                <Link href="/cart" className="btn-link-02 text-center">
+                                                    . . .
                                                 </Link>
                                             </Tooltip>
                                         </div>
@@ -115,17 +115,17 @@ const MiniCart = ({className, isHidden, openHandler, closeHandler}) => {
                                     </div>
                                     <div className="tt-cart-btn">
                                         <div className="tt-item">
-                                            <Link href="/checkout">
-                                                <a className="btn">Proceed to Checkout</a>
+                                            <Link href="/checkout" className="btn">
+                                                Proceed to Checkout
                                             </Link>
                                         </div>
                                         <div className="tt-item">
-                                            <Link href="/cart">
-                                                <a className="btn-link-02 tt-hidden-mobile">View Cart</a>
+                                            <Link href="/cart" className="btn-link-02 tt-hidden-mobile">
+                                                View Cart
                                             </Link>
 
-                                            <Link href="/cart">
-                                                <a className="btn btn-border tt-hidden-desktop">View Cart</a>
+                                            <Link href="/cart" className="btn btn-border tt-hidden-desktop">
+                                                View Cart
                                             </Link>
                                         </div>
                                     </div>

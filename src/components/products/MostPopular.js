@@ -57,8 +57,8 @@ const MostPopular = ({products, layout, containerFluid, limit, productClass, sho
                 )}
                 {showMoreBtn && (
                     <div className="text-center">
-                        <Link href="/shop">
-                            <a className="btn btn-top custom-btn">View all products →</a>
+                        <Link href="/shop" className="btn btn-top custom-btn">
+                            View all products →
                         </Link>
                     </div>
                 )}

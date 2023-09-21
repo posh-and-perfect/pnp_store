@@ -109,8 +109,8 @@ const OrderDetails = () => {
       <div className="order-details-footer">
         <p>
           Your personal data will be used to process your order in our
-          <Link href="/">
-            <a className="text-danger"> privacy policy.</a>
+          <Link href="/" className="text-danger">
+             privacy policy.
           </Link>
         </p>
         <div className="form-check mt-2">

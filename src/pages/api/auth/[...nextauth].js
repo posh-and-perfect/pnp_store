@@ -22,7 +22,7 @@ export default NextAuth({
         const db = await connectToDatabase();
         const user = await db.collection('users').findOne({ email: username });
 
-        if (user && await compare(password, user.password)) {
+        if (user && (await compare(password, user.password))) {
           // Authentication is successful, return the user object
           return Promise.resolve(user);
         } else {

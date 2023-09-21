@@ -37,7 +37,7 @@ const BrandsThree = () => {
                 >
                     {data.map(brand => (
                         <Link href={brand?.link} key={brand.id}>
-                            <a><img src={brand?.logo} alt="brand"/></a>
+                            <img src={brand?.logo} alt="brand"/>
                         </Link>
                     ))}
                 </Slider>

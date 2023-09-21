@@ -27,31 +27,31 @@ const CartItem = ({product, className}) => {
                     {variations ? (
                         variations.map((variation, i) => (
                             variation.color.name === color && (
-                                <Link href={slug} key={i}>
-                                    <a>
-                                        <img
-                                            src={variation.color.thumb}
-                                            alt={product.name}
-                                        />
-                                    </a>
-                                </Link>
+                                (<Link href={slug} key={i}>
+
+                                    <img
+                                        src={variation.color.thumb}
+                                        alt={product.name}
+                                    />
+
+                                </Link>)
                             )
                         ))
                     ) : (
-                        <Link href={slug}>
-                            <a>
-                                <img
-                                    src={thumbs[0]}
-                                    alt={name}
-                                />
-                            </a>
-                        </Link>
+                        (<Link href={slug}>
+
+                            <img
+                                src={thumbs[0]}
+                                alt={name}
+                            />
+
+                        </Link>)
                     )}
                 </div>
             </td>
             <td>
                 <h2 className="tt-title">
-                    <Link href={slug}>{name}</Link>
+                    <Link href={slug} legacyBehavior>{name}</Link>
                     {variations && (
                         <ul className="tt-add-info">
                             <li>

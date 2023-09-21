@@ -14,7 +14,7 @@ const EmptyWishlist = () => {
                     </svg>
                 </div>
                 <p>No products were added to the wishlist</p>
-                <Link href="/shop"><a className="btn">CONTINUE SHOPPING</a></Link>
+                <Link href="/shop" className="btn">CONTINUE SHOPPING</Link>
             </div>
         </div>
     );

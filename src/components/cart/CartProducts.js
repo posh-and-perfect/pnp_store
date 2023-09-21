@@ -18,7 +18,7 @@ const CartProducts = () => {
             </table>
             <div className="tt-shopcart-btn">
                 <div className="col-left">
-                    <Link href="/shop"><a className="btn-link"><i className="icon-e-19"/>CONTINUE SHOPPING</a></Link>
+                    <Link href="/shop" className="btn-link"><i className="icon-e-19"/>CONTINUE SHOPPING</Link>
                 </div>
                 <div className="col-right">
                     <a className="btn-link" href="/"

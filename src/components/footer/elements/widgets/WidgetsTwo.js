@@ -25,7 +25,7 @@ const WidgetsTwo = ({className, dark, colorScheme}) => {
                                 {categories.sort().map(category => (
                                     <li key={category}>
                                         <Link href={`/product/category/${category}`}>
-                                            <a>{toCapitalize(category.toLowerCase())}</a>
+                                            {toCapitalize(category.toLowerCase())}
                                         </Link>
                                     </li>
                                 ))}
@@ -39,7 +39,7 @@ const WidgetsTwo = ({className, dark, colorScheme}) => {
                                 {accountData.map(item => (
                                     <li key={item.id}>
                                         <Link href={item.link}>
-                                            <a>{item.text}</a>
+                                            {item.text}
                                         </Link>
                                     </li>
                                 ))}

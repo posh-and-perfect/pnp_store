@@ -11,7 +11,7 @@ const DesktopNav = ({className, navData}) => {
                         <li key={navItem.id}
                             className={`dropdown ${navItem.submenu ? 'tt-submenu' : ''} ${navItem.mega_menu ? 'megamenu' : 'tt-megamenu-col-01'}`}
                         >
-                            <Link href={navItem.link}><a>{navItem.text}</a></Link>
+                            <Link href={navItem.link}>{navItem.text}</Link>
                             {navItem?.submenu && (
                                 <div className="dropdown-menu">
                                     <Row>
@@ -21,7 +21,7 @@ const DesktopNav = ({className, navData}) => {
                                                     <div className={`col-sm-${navItem?.mega_menu ? 3 : 12}`}
                                                          key={subItem.id}>
                                                         <h6 className="tt-title-submenu">
-                                                            <Link href="/">
+                                                            <Link href="/" legacyBehavior>
                                                                 <span>{subItem.title}</span>
                                                             </Link>
                                                         </h6>
@@ -29,18 +29,18 @@ const DesktopNav = ({className, navData}) => {
                                                             {subItem?.lists.map((item, index) => (
                                                                 <li key={index} className={item.badge}>
                                                                     <Link href={item.link}>
-                                                                        <a>
-                                                                            {item.text}
-                                                                            {item.badge && (
-                                                                                <span
-                                                                                    className={`tt-badge tt-${item.badge}`}>
-                                                                                {item.badge === 'coming_soon' && 'COMING SOON'}
-                                                                                    {item.badge === 'popular' && 'POPULAR'}
-                                                                                    {item.badge === 'hot' && 'HOT'}
-                                                                                    {item.badge === 'new' && 'NEW'}
-                                                                            </span>
-                                                                            )}
-                                                                        </a>
+
+                                                                        {item.text}
+                                                                        {item.badge && (
+                                                                            <span
+                                                                                className={`tt-badge tt-${item.badge}`}>
+                                                                            {item.badge === 'coming_soon' && 'COMING SOON'}
+                                                                                {item.badge === 'popular' && 'POPULAR'}
+                                                                                {item.badge === 'hot' && 'HOT'}
+                                                                                {item.badge === 'new' && 'NEW'}
+                                                                        </span>
+                                                                        )}
+
                                                                     </Link>
                                                                 </li>
                                                             ))}
@@ -51,7 +51,7 @@ const DesktopNav = ({className, navData}) => {
                                                 {navItem?.promo && (
                                                     <Col lg={3}>
                                                         <Link href="/shop" className="tt-promo-02">
-                                                            <a><img src={navItem?.promo} alt="promo"/></a>
+                                                            <img src={navItem?.promo} alt="promo"/>
                                                         </Link>
                                                     </Col>
                                                 )}

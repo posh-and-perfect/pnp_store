@@ -13,22 +13,22 @@ const ProductTwo = ({product}) => {
             <div className="tt-layout-vertical">
                 <div className="tt-img">
                     <Link href={slug}>
-                        <a>
-                            <figure className="tt-img-default">
-                                <img src={thumbs[0]} alt={name}/>
-                            </figure>
-                            <figure className="tt-img-roll-over">
-                                <img src={thumbs[1]} alt={name}/>
-                            </figure>
-                        </a>
+
+                        <figure className="tt-img-default">
+                            <img src={thumbs[0]} alt={name}/>
+                        </figure>
+                        <figure className="tt-img-roll-over">
+                            <img src={thumbs[1]} alt={name}/>
+                        </figure>
+
                     </Link>
                 </div>
 
                 <div className="tt-description">
                     <ul className="tt-add-info">
-                        <li><Link href={slug}>{vendor}</Link></li>
+                        <li><Link href={slug} legacyBehavior>{vendor}</Link></li>
                     </ul>
-                    <h6 className="tt-title"><Link href={slug}>{name}</Link></h6>
+                    <h6 className="tt-title"><Link href={slug} legacyBehavior>{name}</Link></h6>
                     <div className="tt-price mt-1">
                         {!discount ? (
                             CURRENCY + productPrice.toFixed(2)

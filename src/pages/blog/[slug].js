@@ -40,13 +40,13 @@ const Post = ({post}) => {
                                 <div className="tt-post-single">
                                     <div className="tt-tag">
                                         {post?.categories.map((category, i) => (
-                                            <Link href={`/blog/${post?.slug}`} key={i}><a>{category}</a></Link>
+                                            <Link href={`/blog/${post?.slug}`} key={i}>{category}</Link>
                                         ))}
                                     </div>
                                     <h1 className="tt-title">{post?.title}</h1>
                                     <div className="tt-author">
                                         by <Link
-                                        href={`/blog/${post?.slug}`}><a>{post?.author}</a></Link> on {dateFormat(post?.date, 'mmmm dd, yyyy')}
+                                        href={`/blog/${post?.slug}`}>{post?.author}</Link> on {dateFormat(post?.date, 'mmmm dd, yyyy')}
                                     </div>
                                     <div className="tt-post-content">
                                         {parse(post?.content)}

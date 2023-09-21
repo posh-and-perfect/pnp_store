@@ -68,8 +68,8 @@ const ProductsTab = ({products, tabData, className, productClass, containerFluid
 
                 {showMoreBtn && (
                     <div className="text-center tt_product_showmore">
-                        <Link href="/product/category/t-shirt">
-                            <a className="btn">Shop the latest release →</a>
+                        <Link href="/product/category/t-shirt" className="btn">
+                            Shop the latest release →
                         </Link>
                     </div>
                 )}

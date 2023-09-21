@@ -21,8 +21,8 @@ const HeroBannerFive = ({className}) => {
                                 <div className="tt-description-wrapper text-start">
                                     <div className="tt-title-small">SUMMER 2021</div>
                                     <div className="tt-title-large">NEW ARRIVALS</div>
-                                    <Link href="/shop">
-                                        <a className="btn btn-xl">DISCOVER NOW</a>
+                                    <Link href="/shop" className="btn btn-xl">
+                                        DISCOVER NOW
                                     </Link>
                                 </div>
                             </div>
@@ -32,17 +32,17 @@ const HeroBannerFive = ({className}) => {
                     <div className="divider-sm d-block d-md-none"/>
 
                     <Col sm={6} md={4} lg={3} className="text-center">
-                        <Link href="/shop">
-                            <a className="tt-promo-box hover-type-2 nomargin">
-                                <img src="/assets/images/promo/index20-promo-img-05.jpg" alt="wokiee"/>
-                                <div className="tt-description tt-point-v-b">
-                                    <div className="tt-description-wrapper">
-                                        <div className="tt-background"/>
-                                        <div className="tt-title-small">TOP VIEW IN THIS WEEK</div>
-                                        <div className="tt-title-large">TRENDING</div>
-                                    </div>
+                        <Link href="/shop" className="tt-promo-box hover-type-2 nomargin">
+
+                            <img src="/assets/images/promo/index20-promo-img-05.jpg" alt="wokiee"/>
+                            <div className="tt-description tt-point-v-b">
+                                <div className="tt-description-wrapper">
+                                    <div className="tt-background"/>
+                                    <div className="tt-title-small">TOP VIEW IN THIS WEEK</div>
+                                    <div className="tt-title-large">TRENDING</div>
                                 </div>
-                            </a>
+                            </div>
+
                         </Link>
                     </Col>
                 </Row>

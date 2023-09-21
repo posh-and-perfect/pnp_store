@@ -38,8 +38,8 @@ const SignupPage = () => {
                       faster, store multiple shipping addresses, view and track your orders in your account and more.
                     </p>
                     <div className="form-group">
-                      <Link href="/account/signin">
-                        <a className="btn btn-top btn-border">SIGN IN</a>
+                      <Link href="/account/signin" className="btn btn-top btn-border">
+                        SIGN IN
                       </Link>
                     </div>
                   </div>

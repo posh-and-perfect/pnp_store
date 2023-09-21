@@ -39,20 +39,20 @@ const MobileNav = ({className, mobileNavbarHandler, showMobileNavbar, navData}) 
                         </li>
                         {navData.map(nav => (
                             <li key={nav.id}>
-                                <Link href={nav?.link}>
-                                    <a
-                                        className={nav?.submenu || nav?.mega_menu ? 'mm-next-level' : ''}
-                                        onClick={(event => handleMenu(event))}
-                                    >
-                                        {nav?.text}
-                                    </a>
+                                <Link
+                                    href={nav?.link}
+                                    className={nav?.submenu || nav?.mega_menu ? 'mm-next-level' : ''}
+                                    onClick={(event => handleMenu(event))}>
+
+                                    {nav?.text}
+
                                 </Link>
                                 {nav?.submenu && (
                                     nav?.submenu.map(subitem => (
                                         <ul key={subitem?.id}>
                                             <li className="title">{subitem?.title}</li>
                                             {subitem?.lists.map((item, idx) => (
-                                                <li key={idx} className={item.badge}><Link href={item?.link}>{item?.text}</Link></li>
+                                                <li key={idx} className={item.badge}><Link href={item?.link} legacyBehavior>{item?.text}</Link></li>
                                             ))}
                                         </ul>
                                     ))

@@ -50,31 +50,29 @@ const FilterPrice = ({getFilterParam, products}) => {
         getFilterParam('price', value);
     }
 
-    return (
-        <>
-            <ShopWidget title="FILTER BY PRICE">
-                <ul className="tt-list-row">
-                    {priceRange.slice(0, priceLimit).map((range, idx) => (<li key={idx}>
-                        <a
-                            href="/"
-                            data-filtertype="price"
-                            data-value={range.replace(/ /g, '')}
-                            onClick={event => onPriceFilterHandler(event, "price")}
-                        >
-                            {`USD ${range}`}
-                        </a>
-                    </li>))}
-                </ul>
+    return <>
+        <ShopWidget title="FILTER BY PRICE">
+            <ul className="tt-list-row">
+                {priceRange.slice(0, priceLimit).map((range, idx) => (<li key={idx}>
+                    <a
+                        href="/"
+                        data-filtertype="price"
+                        data-value={range.replace(/ /g, '')}
+                        onClick={event => onPriceFilterHandler(event, "price")}
+                    >
+                        {`USD ${range}`}
+                    </a>
+                </li>))}
+            </ul>
 
-                {priceRange.length > priceLimit && (<button
-                    className="btn-link-02"
-                    onClick={() => setPriceLimit(prevState => prevState + 3)}
-                >
-                    + More
-                </button>)}
-            </ShopWidget>
-        </>
-    );
+            {priceRange.length > priceLimit && (<button
+                className="btn-link-02"
+                onClick={() => setPriceLimit(prevState => prevState + 3)}
+            >
+                + More
+            </button>)}
+        </ShopWidget>
+    </>;
 };
 
 FilterPrice.propTypes = {

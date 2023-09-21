@@ -21,8 +21,8 @@ const PromoBannerCareSkin = ({className, bgImage}) => {
                                                 tool. WOKIEE is outstanding Premium Shopify theme. It will be perfect
                                                 solution for your current or future webshop.
                                             </p>
-                                            <Link href="/about">
-                                                <a className="btn btn-xl btn-white">Read more about us →</a>
+                                            <Link href="/about" className="btn btn-xl btn-white">
+                                                Read more about us →
                                             </Link>
                                         </div>
                                     </div>

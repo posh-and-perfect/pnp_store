@@ -100,7 +100,7 @@ const ShopFilters = (props) => {
                 <ul className="tt-list-row">
                     {categories.slice(0, categoryLimit).map(cat => (
                         <li key={cat} className={cat === slug ? 'active' : ''}>
-                            <Link href={`/product/category/${cat}`}>{toCapitalize(cat.replace(/-/g, ' '))}</Link>
+                            <Link href={`/product/category/${cat}`} legacyBehavior>{toCapitalize(cat.replace(/-/g, ' '))}</Link>
                         </li>
                     ))}
                 </ul>
@@ -157,7 +157,7 @@ const ShopFilters = (props) => {
                 <ul className="tt-list-inline">
                     {tags.map(tag => (
                         <li key={tag} className={tag === slug ? 'active' : ''}>
-                            <Link href={`/product/tag/${tag}`}>{toCapitalize(tag.replace(/-/g, ' '))}</Link>
+                            <Link href={`/product/tag/${tag}`} legacyBehavior>{toCapitalize(tag.replace(/-/g, ' '))}</Link>
                         </li>
                     ))}
                 </ul>

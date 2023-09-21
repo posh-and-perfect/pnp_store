@@ -18,18 +18,18 @@ const ProductFour = ({product, showPrice, className}) => {
         <div className={`tt-product thumbprod-center product-nohover ${className ? className : ''}`}>
             <div className="tt-image-box">
                 <Link href={slug}>
-                    <a>
-                        <ProductThumb
-                            thumbs={productColorImage ? [productColorImage, thumbs[1]] : thumbs}
-                            productName={name}
-                        />
-                    </a>
+
+                    <ProductThumb
+                        thumbs={productColorImage ? [productColorImage, thumbs[1]] : thumbs}
+                        productName={name}
+                    />
+
                 </Link>
             </div>
 
             <div className={`tt-description`}>
                 <h2 className="tt-title">
-                    <Link href={slug}>{name}</Link>
+                    <Link href={slug} legacyBehavior>{name}</Link>
                 </h2>
 
                 {showPrice && (

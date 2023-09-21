@@ -41,10 +41,10 @@ const CompareProduct = ({product}) => {
                         onClick={() => removeFromCompare(product)}
                     />
                     <Link href={slug}>
-                        <a><ProductThumb thumbs={[thumbs[0]]} productName={name}/></a>
+                        <ProductThumb thumbs={[thumbs[0]]} productName={name}/>
                     </Link>
                     <h2 className="tt-title mt-3">
-                        <Link href={slug}><a>{name}</a></Link>
+                        <Link href={slug}>{name}</Link>
                     </h2>
                     <div className="tt-price mt-1">
                         {!discount ? (

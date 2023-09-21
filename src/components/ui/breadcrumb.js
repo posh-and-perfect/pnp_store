@@ -24,11 +24,11 @@ const Breadcrumb = () => {
         <div className="tt-breadcrumb">
             <div className="container">
                 <ul>
-                    <li><Link href="/"><a>Home</a></Link></li>
+                    <li><Link href="/">Home</Link></li>
                     {breadcrumbs?.map((breadcrumb, i) => (
                         breadcrumbs.length !== (i + 1) ? (
                             <li key={breadcrumb.breadcrumb}>
-                                <Link href={breadcrumb.href}><a>{toCapitalize(breadcrumb.breadcrumb)}</a></Link>
+                                <Link href={breadcrumb.href}>{toCapitalize(breadcrumb.breadcrumb)}</Link>
                             </li>
                         ) : (
                             <li key={breadcrumb.breadcrumb}>

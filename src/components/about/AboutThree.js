@@ -16,7 +16,7 @@ const AboutThree = ({className, data, layout, containerInnerClass}) => {
                         <Col md={6} className="col-description">
                             <h6 className="tt-title mt-4 mt-lg-0">{parse(data.title)}</h6>
                             <p>{parse(data.content)}</p>
-                            {data.btnText && <Link href={data.btnLink}><a className="btn">{data.btnText}</a></Link>}
+                            {data.btnText && <Link href={data.btnLink} className="btn">{data.btnText}</Link>}
                         </Col>
                     </Row>
                 </Container>

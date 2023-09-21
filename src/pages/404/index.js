@@ -15,7 +15,7 @@ const Page404 = () => {
                         <img src="/assets/images/no-placeholder/error.png" alt="404 not found error"/>
                         <h1 className="tt-title">THAT PAGE CAN’T BE FOUND.</h1>
                         <p>It looks like nothing was found at this location.</p>
-                        <Link href="/"><a className="btn">GO TO HOME</a></Link>
+                        <Link href="/" className="btn">GO TO HOME</Link>
                     </div>
                 </div>
             </div>

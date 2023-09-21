@@ -64,8 +64,8 @@ const CalculateShipping = () => {
               placeholder="Zip/Postal Code"
             />
           </div>
-          <Link href="/shop">
-            <a className="btn btn-border">CALCULATE SHIPPING</a>
+          <Link href="/shop" className="btn btn-border">
+            CALCULATE SHIPPING
           </Link>
           <p>
             There is one shipping rate available for Alabama, Tanzania, United
@@ -100,11 +100,9 @@ const CalculateShipping = () => {
             </tr>
           </tfoot>
         </table>
-        <Link href="/checkout">
-          <a className="btn btn-lg">
-            <span className="icon icon-check_circle" />
-            PROCEED TO CHECKOUT
-          </a>
+        <Link href="/checkout" className="btn btn-lg">
+
+          <span className="icon icon-check_circle" />PROCEED TO CHECKOUT
         </Link>
       </div>
     </div>

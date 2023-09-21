@@ -11,7 +11,7 @@ const EmptyCompare = () => {
                 />
             </div>
             <p>No products were added to the compare</p>
-            <Link href="/shop"><a className="btn">CONTINUE SHOPPING</a></Link>
+            <Link href="/shop" className="btn">CONTINUE SHOPPING</Link>
         </div>
     );
 };

@@ -57,8 +57,8 @@ const FeaturedProducts = ({products, layout, containerFluid, limit = 8, showMore
                 )}
                 {showMoreBtn && (
                     <div className="text-center">
-                        <Link href="/product/category/coffee">
-                            <a className="btn btn-top custom-btn">View all products →</a>
+                        <Link href="/product/category/coffee" className="btn btn-top custom-btn">
+                            View all products →
                         </Link>
                     </div>
                 )}
