@@ -1,4 +1,3 @@
-## HasThemes
-### Wokiee React eCommerce
-
-<img src="https://htmldemo.hasthemes.com/banner/wokiee-react-1/01.png"/>
+## TODO
+### [] Products routing
+- [] Make sure all product links are properly routed
